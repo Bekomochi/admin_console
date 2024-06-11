@@ -4,15 +4,12 @@ use App\Http\Controllers\AccountController;
 use Illuminate\Support\Facades\Route;
 
 
-/*Route::post('○○/□□'～);の['○○/□□']はurl
- * loginviewのformのurl関数に記入する
+/* Route::post('○○/□□'～);の['○○/□□']はurl
+ * formのurl関数に記入する
  */
 
 //ルーティング
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('accounts/index', [AccountController::class, 'index']);
+
 
 //パラメータ付きルーティング
 //Route::get('accounts/index/{account_id}', [AccountController::class, 'index']);
@@ -23,11 +20,7 @@ Route::get('accounts/index', [AccountController::class, 'index']);
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('accounts/index', [AccountController::class, 'index']);
 Route::get('accounts/login', [AccountController::class, 'login']);
-
 Route::post('accounts/dologin', [AccountController::class, 'dologin']);
-
-Route::get('accounts/index', function () {
-    return view('welcome');
-});
-Route::get('admin/item', [\App\Providers\adminController::class, 'item']);
+Route::get('accounts/item', [AccountController::class, 'item']);

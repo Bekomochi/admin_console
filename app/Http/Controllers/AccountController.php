@@ -26,7 +26,7 @@ class AccountController extends Controller
         //$request->session()->forget('name');
 
         //セッションの全てのデータを削除
-        $request->session()->flush();
+        //$request->session()->flush();
 
         return view('accounts/index', ['title' => $title]); //viewに変数を渡す
     }
@@ -51,5 +51,10 @@ class AccountController extends Controller
         } else {
             return view('accounts/loginview');//不一致だったらログイン画面を表示
         }
+    }
+
+    public function item(Request $request)
+    {
+        return view('accounts/item');//アイテム一覧を表示
     }
 }
