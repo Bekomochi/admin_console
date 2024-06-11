@@ -55,6 +55,6 @@ class AccountController extends Controller
 
     public function item(Request $request)
     {
-        return view('accounts/item');//アイテム一覧を表示
+        return view('accounts/itemView');//アイテム一覧を表示
     }
 }

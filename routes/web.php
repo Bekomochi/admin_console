@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AccountController;
+use App\Http\Controllers\adminController;
 use Illuminate\Support\Facades\Route;
 
 
