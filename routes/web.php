@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\AccountController;
-use App\Http\Controllers\adminController;
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -26,4 +26,4 @@ Route::get('accounts/login', [AccountController::class, 'login']);
 Route::post('accounts/dologin', [AccountController::class, 'dologin']);
 
 
-Route::get('admin/item', [AccountController::class, 'item']);
+Route::get('Admin/item', [AdminController::class, 'item']);

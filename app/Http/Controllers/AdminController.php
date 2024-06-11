@@ -5,10 +5,10 @@ namespace App\Http\Controllers;
 use Barryvdh\Debugbar\Facades\Debugbar;
 use Illuminate\Http\Request;
 
-class adminController
+class AdminController
 {
     public function item(Request $request)
     {
-        return view('admin/itemView');//アイテム一覧を表示
+        return view('Admin/itemView');//アイテム一覧を表示
     }
 }
