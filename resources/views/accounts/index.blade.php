@@ -9,9 +9,3 @@
     @csrf
     <input type="submit" value="アイテム一覧を表示">
 </form>
-
-
-<form method="post" action="{{url('accounts/doLogout')}}">
-    @csrf
-    <input type="submit" value="ログアウト">
-</form>
