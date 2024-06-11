@@ -9,3 +9,13 @@
     @csrf
     <input type="submit" value="アイテム一覧を表示">
 </form>
+
+<form action="{{url('Admin/player')}}">
+    @csrf
+    <input type="submit" value="プレイヤー一覧を表示">
+</form>
+
+<form action="{{url('Admin/having')}}">
+    @csrf
+    <input type="submit" value="所持アイテム一覧を表示">
+</form>

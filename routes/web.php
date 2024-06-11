@@ -27,3 +27,5 @@ Route::post('accounts/dologin', [AccountController::class, 'dologin']);
 
 
 Route::get('Admin/item', [AdminController::class, 'item']);
+Route::get('Admin/player', [AdminController::class, 'player']);
+Route::get('Admin/having', [AdminController::class, 'having']);

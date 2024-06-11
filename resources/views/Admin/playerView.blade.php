@@ -33,3 +33,7 @@
         </td>
     </tr>
 </table>
+
+<form action="{{url('accounts/index')}}">
+    <input type="submit" value="戻る">
+</form>

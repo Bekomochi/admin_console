@@ -11,4 +11,14 @@ class AdminController
     {
         return view('Admin/itemView');//アイテム一覧を表示
     }
+
+    public function player(Request $request)
+    {
+        return view('Admin/playerView');
+    }
+
+    public function having(Request $request)
+    {
+        return view('Admin/havingView');
+    }
 }
