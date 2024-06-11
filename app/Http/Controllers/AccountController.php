@@ -52,9 +52,4 @@ class AccountController extends Controller
             return view('accounts/loginview');//不一致だったらログイン画面を表示
         }
     }
-
-    public function item(Request $request)
-    {
-        return view('accounts/itemView');//アイテム一覧を表示
-    }
 }
