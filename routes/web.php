@@ -22,9 +22,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('accounts/index', [AccountController::class, 'index']);
-Route::get('accounts/login', [AccountController::class, 'login']);
-Route::post('accounts/dologin', [AccountController::class, 'dologin']);
 
+Route::post('accounts/dologin', [AccountController::class, 'dologin']);
+Route::get('accounts/login', [AccountController::class, 'login']);
+
+Route::get('accounts/logout', [AccountController::class, 'logout']);
+Route::post('accounts/dologout', [AccountController::class, 'dologout']);
 
 Route::get('Admin/item', [AdminController::class, 'item']);
 Route::get('Admin/player', [AdminController::class, 'player']);

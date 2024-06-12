@@ -19,3 +19,8 @@
     @csrf
     <input type="submit" value="所持アイテム一覧を表示">
 </form>
+
+<form method="post" action="{{url('accounts/dologout')}}">
+    @csrf
+    <input type="submit" value="ログアウト">
+</form>

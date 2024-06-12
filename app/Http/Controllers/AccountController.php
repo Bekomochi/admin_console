@@ -47,9 +47,20 @@ class AccountController extends Controller
     public function dologin(Request $request) //$requestの中に名前とパスワードの情報が入っている
     {
         if ($request['name'] === 'jobi' && $request['password'] === 'jobi') { //nameが'jobi',passwordが'jobi'だったら
-            return redirect('accounts/index'); //アカウント一覧にリダイレクト
+            return redirect('accounts/index'); //accounts/indexにリダイレクト
         } else {
             return view('accounts/loginview');//不一致だったらログイン画面を表示
         }
+    }
+
+    public function logout(Request $request)
+    {
+        return view('accounts/loginview');
+    }
+
+    public function dologout(Request $request)
+    {
+        $request->session()->flush();
+        return redirect('accounts/login');
     }
 }
